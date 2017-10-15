@@ -9,7 +9,7 @@
 <meta name="author" content="">
 
 <!-- FONTS ONLINE -->
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Merriweather:300,400,700,900|Montserrat:400,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Merriweather:300,400,700,900|Montserrat:400,700" rel="stylesheet">
 
 <!--MAIN STYLE-->
 <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,6 @@
 <!-- Page Wrap -->
 <div id="wrap" class="no-padding">
   <div class="header-space"> 
-
     <!-- Header -->
     <header class="header-left-fixed">
       <div class="logo"> <a href="#."> <img class="img-responsive" src="images/logo-white.png" alt="blossom Logo"></a> </div>
@@ -60,10 +59,10 @@
               <li><a href="contact.html">contact</a></li>
             </ul>
           </li>
-          <li><a href="portfolio-2-column.html"> WORKS</a></li>
+          <li  class="active"><a href="portfolio-2-column.html"> WORKS</a></li>
           <li><a href="services.html"> SERVICES </a></li>
           <li><a href="blog.html"> BLOG </a></li>
-          <li  class="active"><a href="contact.html"> CONTACT</a></li>
+          <li><a href="contact.html"> CONTACT</a></li>
         </ul>
       </nav>
       
@@ -83,161 +82,123 @@
       </div>
     </header>
     
-    <!--======= SUB BANNER =========-->
+    <!--======= AUB BANNER =========-->
     <section class="sub-banner">
       <div class="container">
         <div class="position-center-center">
-          <h2>Contact</h2>
+          <h2>Portfolio</h2>
           
           <!--======= Breadcrumb =========-->
           <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li class="active">contact</li>
+            <li class="active">portfolio 2 column</li>
           </ol>
         </div>
       </div>
     </section>
-      
-      <!--======= Contact =========-->
-      <div class="contact-us sectoion-100px">
-
-<div class="container"> 
-
-
-<!--======= Contact Info =========-->
-        <div class="contact-info ">
+    
+    <!--======= PORTFOLIO =========-->
+    <section class="sectoion-150px port-wrap portfolio">
+      <div class="container"> 
         
-
-        <div class="tittle ">
-        <h3 class="no-margin">Contact us</h3>
-        <p>Get in touch with us!</p>
-        </div>
-
-
-        <ul class="row">
-
-        <!-- ADDRESS -->
-            <li class="col-md-4">
-
-              <div class="icon">                
-                  <i class="fa fa-map-marker"></i>
-              </div>
-              <h6>ADDRESS</h6>
-                  <p>5th Floor, Washington Square Park, NY, United States
-</p>        </li>
-
-
-<!-- Phone -->
-<li class="col-md-4">
-
-              <div class="icon">                
-                  <i class="fa fa-mobile"></i>
-              </div>
-              <h6>Phone</h6>
-                  <p>(004)+ 124 45 78 678</p>
-<p>(004)+ 124 45 78 678
-</p>        </li>
-
-<!-- EMAIL -->
-<li class="col-md-4">
-
-              <div class="icon">                
-                  <i class="fa fa-envelope-o"></i>
-              </div>
-              <h6>EMAIL</h6>
-                  <p>Support@yourdomain.com</p>
-                  <p>
-Info@mail.com
-</p>        </li>
-
+        <!-- Portflio Filter -->
+        <ul class="filter">
+          <li><a class="active" href="#." data-filter="*">ALL</a></li>
+          <li><a href="#" data-filter=".int">WEB DESIGN</a></li>
+          <li><a href="#" data-filter=".arch">BRANDING</a></li>
+          <li><a href="#" data-filter=".build">PHOTOGRAPHY </a></li>
+          <li><a href="#" data-filter=".plumb">ILLUSTRATOR </a></li>
         </ul>
-        </div>
-        	
         
-
-
-
-      </div>
-    </div>
-    
-
-    <!--======= MAP =========-->
-    <div id="map"></div>
-
-
-
-  <!--======= Contact =========-->
-      <div class="contact-us sectoion-100px">
-
-<div class="container"> 
-
-
-<div class="tittle ">
-        <h3 class="no-margin">LEAVE YOUR MESSAGE</h3>
-    
-        </div>
-
-
-
-        <div class="contact-form"> 
-            <!--======= FORM  =========-->
-            <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="row">
-                    <li class="col-sm-12">
-                      <label>*NAME
-                        <input type="text" class="form-control" name="name" id="name" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-sm-12">
-                      <label>*EMAIL
-                        <input type="text" class="form-control" name="email" id="email" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-sm-12">
-                      <label>PHONE
-                        <input type="text" class="form-control" name="company" id="company" placeholder="">
-                      </label>
-                    </li>
-                    <li class="col-sm-12">
-                      <label>SUBJECT
-                        <input type="text" class="form-control" name="website" id="website" placeholder="">
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="row">
-                    
-                    <li class="col-sm-12">
-                      <label>*MESSAGE
-                        <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
-                      </label>
-                    </li>
-                    <li class="col-sm-12 no-margin">
-                      <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">SEND NOW</button>
-                    </li>
-                  </ul>
+        <!-- Items Row -->
+        <ul class="port-folio-row row col-2 items">
+          
+          <!-- Project 1 -->
+          <li class="item int plumb">
+            <article> <img src="images/folio-img-1.jpg" alt=""> 
+              <!-- Hover Info -->
+              <div class="hover-port">
+                <div class="position-center-center"> <a href="#."><i class="fa fa-link"></i></a>
+                  <h6>TITTLE HERE</h6>
                 </div>
               </div>
-            </form>
-          </div>
-</div>
-
-</div>
-
-
+            </article>
+          </li>
+          
+          <!-- Project 1 -->
+          <li class="item  plumb">
+            <article> <img src="images/folio-img-2.jpg" alt=""> 
+              <!-- Hover Info -->
+              <div class="hover-port">
+                <div class="position-center-center"> <a href="#."><i class="fa fa-link"></i></a>
+                  <h6>TITTLE HERE</h6>
+                </div>
+              </div>
+            </article>
+          </li>
+          
+          <!-- Project 1 -->
+          <li class="item int plumb">
+            <article> <img src="images/folio-img-3.jpg" alt=""> 
+              <!-- Hover Info -->
+              <div class="hover-port">
+                <div class="position-center-center"> <a href="#."><i class="fa fa-link"></i></a>
+                  <h6>TITTLE HERE</h6>
+                </div>
+              </div>
+            </article>
+          </li>
+          
+          <!-- Project 1 -->
+          <li class="item  build plumb">
+            <article> <img src="images/folio-img-5.jpg" alt=""> 
+              <!-- Hover Info -->
+              <div class="hover-port">
+                <div class="position-center-center"> <a href="#."><i class="fa fa-link"></i></a>
+                  <h6>TITTLE HERE</h6>
+                </div>
+              </div>
+            </article>
+          </li>
+          
+          <!-- Project 1 -->
+          <li class="item int arch">
+            <article> <img src="images/folio-img-6.jpg" alt=""> 
+              <!-- Hover Info -->
+              <div class="hover-port">
+                <div class="position-center-center"> <a href="#."><i class="fa fa-link"></i></a>
+                  <h6>TITTLE HERE</h6>
+                </div>
+              </div>
+            </article>
+          </li>
+          
+          <!-- Project 1 -->
+          <li class="item int arch build">
+            <article> <img src="images/folio-img-7.jpg" alt=""> 
+              <!-- Hover Info -->
+              <div class="hover-port">
+                <div class="position-center-center"> <a href="#."><i class="fa fa-link"></i></a>
+                  <h6>TITTLE HERE</h6>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="text-center"> <a href="#." class="btn btn-small">Load more</a> </div>
+      </div>
+    </section>
+    
     <!--======= FOOTER UP =========-->
     <section class="footer-up">
-      <div class="col-sm-6 work"> <i class="ion-ios-briefcase-outline"></i>
-        <h4>Want to work together?</h4>
-        <p>Great! Tell about your project</p>
-        <a href="contact.html"><i class='ion-ios-arrow-thin-left'></i></a> </div>
-      <div class="col-sm-6 contact"> <i class="ion-map"></i>
-        <h4>Contact us</h4>
-        <p>Great! Tell about your project</p>
-        <a href="contact.html"><i class='ion-ios-arrow-thin-right'></i></a> </div>
+        <div class="col-sm-6 work"> <i class="ion-ios-briefcase-outline"></i>
+          <h4>Want to work together?</h4>
+          <p>Great! Tell about your project</p>
+          <a href="#."><i class='ion-ios-arrow-thin-left'></i></a> </div>
+        <div class="col-sm-6 contact"> <i class="ion-map"></i>
+          <h4>Contact us</h4>
+          <p>Great! Tell about your project</p>
+          <a href="#."><i class='ion-ios-arrow-thin-right'></i></a> </div>
     </section>
     
     <!--======= FOOTER =========-->
@@ -275,37 +236,5 @@ Info@mail.com
 <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
 <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
 <script src="js/main.js"></script>
-
-<script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW40y4kdsjsz714OVTvrw7woVCpD8EbLE"></script>
-<!-- begin map script--> 
-<script type="text/javascript">
-/*==========  Map  ==========*/
-var map;
-function initialize_map() {
-if ($('#map').length) {
-  var myLatLng = new google.maps.LatLng(-37.814199, 144.961560);
-  var mapOptions = {
-    zoom: 17,
-    center: myLatLng,
-    scrollwheel: false,
-    panControl: false,
-    zoomControl: true,
-    scaleControl: false,
-    mapTypeControl: false,
-    streetViewControl: false
-  };
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    tittle: 'Envato',
-    icon: ''
-  });
-} else {
-  return false;
-}
-}
-google.maps.event.addDomListener(window, 'load', initialize_map);
-</script>
 </body>
 </html>
